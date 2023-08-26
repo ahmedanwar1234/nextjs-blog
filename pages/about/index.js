@@ -7,25 +7,23 @@ import {
   SiAdobephotoshop,
 } from "react-icons/si";
 //  data
+
+
 const aboutData = [
-  {
+
+{
     title: "skills",
     info: [
       {
         title: "Web Development",
-        icons: [
-          <FaHtml5 />,
-          <FaCss3 />,
-          <FaJs />,
-          <FaReact />,
-          <SiNextdotjs />,
-          <SiFramer />,
-          <FaWordpress />,
+        
+        icons:[
+
         ],
       },
       {
         title: "UI/UX Design",
-        icons: [<FaFigma />, <SiAdobexd />, <SiAdobephotoshop />],
+        
       },
     ],
   },
@@ -221,7 +219,7 @@ const About = () => {
                   <div className=" ">{item.stage}</div>
                   <div className=" flex gap-4">
                     {/* icos */}
-                    {item.icons?.map((icon, itemIndex) => {
+                    {item.icons.map((icon, itemIndex) => {
                       return (
                         <div className=" text-2xl text-white  " key={itemIndex}>
                           {icon}
