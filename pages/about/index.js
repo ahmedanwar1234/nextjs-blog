@@ -219,13 +219,7 @@ const About = () => {
                   <div className=" ">{item.stage}</div>
                   <div className=" flex gap-4">
                     {/* icos */}
-                    {item.icons.map((icon, itemIndex) => {
-                      return (
-                        <div className=" text-2xl text-white  " key={itemIndex}>
-                          {icon}
-                        </div>
-                      );
-                    })}
+                  
                   </div>
                 </div>
               );
