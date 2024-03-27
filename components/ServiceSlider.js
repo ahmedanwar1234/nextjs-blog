@@ -18,33 +18,34 @@ import "swiper/css/pagination";
 
 // data
 
-const serviceData = [
+const serviceData  = [
   {
     icon: <RxCrop />,
     title: "Branding",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    description: "As a seasoned full-stack developer with expertise in the MERN stack, I bring a wealth of experience and passion for crafting exceptional web applications. With expertise spanning both front-end and back-end development, I offer comprehensive services to transform your ideas into robust, scalable, and user-friendly solutions."
   },
   {
     icon: <RxPencil2 />,
     title: "Design",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    description: "Leveraging my proficiency in React.js, I design and develop captivating user interfaces that deliver seamless user experiences across devices."
   },
   {
     icon: <RxDesktop />,
     title: "Development",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    description: "My proficiency in Node.js and Express.js enables me to architect and implement efficient, secure, and scalable server-side solutions, while my expertise in MongoDB ensures optimal data management and performance."
   },
   {
     icon: <RxReader />,
     title: "Copywriting",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    description: "Whether you require the development of a new web application, the enhancement of an existing system, or assistance with technical challenges, I am committed to delivering results that exceed your expectations."
   },
   {
     icon: <RxRocket />,
     title: "SEO",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    description: "With a focus on clean code, best practices, and continuous improvement, I am well-equipped to tackle complex challenges and adapt to evolving technologies. Partner with me to elevate your web development projects to new heights and achieve your business objectives with confidence."
   },
 ];
+
 /// import requird modules
 import { FreeMode, Pagination } from "swiper";
 

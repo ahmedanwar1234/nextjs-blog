@@ -1,23 +1,28 @@
 // data
+import Link from 'next/link'
 const workSlides = {
   slides: [
     {
       images: [
         {
           title: 'title',
-          path: '/thumb1.jpg',
+          path: '/organic.png',
+          href:"https://organic2-eight.vercel.app/"
         },
         {
           title: 'title',
-          path: '/thumb2.jpg',
+          path: '/travel.png',
+          href:"https://travel-sage-seven.vercel.app/"
         },
         {
           title: 'title',
-          path: '/thumb3.jpg',
+          path: '/airbnb.png',
+          href:"https://github.com/ahmedanwar1234/arbinb"
         },
         {
           title: 'title',
-          path: '/thumb4.jpg',
+          path: '/ecommerce.png',
+          href:"https://ecommerce-shop-starter-seven.vercel.app/"
         },
       ],
     },
@@ -25,20 +30,10 @@ const workSlides = {
       images: [
         {
           title: 'title',
-          path: '/thumb4.jpg',
+          path: '/blog.png',
+          href:"https://github.com/ahmedanwar1234/front-end-blog-app"
         },
-        {
-          title: 'title',
-          path: '/thumb1.jpg',
-        },
-        {
-          title: 'title',
-          path: '/thumb2.jpg',
-        },
-        {
-          title: 'title',
-          path: '/thumb3.jpg',
-        },
+      
       ],
     },
   ],
@@ -79,7 +74,7 @@ spaceBetween={10}
           <SwiperSlide key={index} className="">
          <div className=' grid grid-cols-2 grid-rows-2 gap-4 cursor-pointer'>
           {slide.images.map((image,index)=>{
-            return <div className=' relative rounded-lg overflow-hidden flex items-center justify-center group ' key={index}>
+            return <Link href={`${image.href}`} className=' relative rounded-lg overflow-hidden flex items-center justify-center group ' key={index}>
               <div className=' flex items-center justify-center relative overflow-hidden group'>
        {/* image */}
 <Image src={image.path} width={500} height={300} alt=''/>              
@@ -99,7 +94,7 @@ spaceBetween={10}
   </div>
 </div>
             </div>
-            </div>
+            </Link>
           })}
          </div>
           </SwiperSlide>

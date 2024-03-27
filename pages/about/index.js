@@ -15,45 +15,37 @@ const aboutData = [
     title: "skills",
     info: [
       {
-        title: "Web Development",
+        title: "Frontend Developer ",
         
         icons:[
 
         ],
       },
       {
-        title: "UI/UX Design",
+        title: "Backend Developer",
+        
+      },
+      {
+        title: "full Stack Develpoer",
         
       },
     ],
   },
-  {
-    title: "awards",
-    info: [
-      {
-        title: "Webby Awards - Honoree",
-        stage: "2011 - 2012",
-      },
-      {
-        title: "Adobe Design Achievement Awards - Finalist",
-        stage: "2009 - 2010",
-      },
-    ],
-  },
+
   {
     title: "experience",
     info: [
       {
-        title: "UX/UI Designer - XYZ Company",
-        stage: "2012 - 2023",
+        title: "Frontend Develper - React with tawilwind css and Next ",
+        stage: "some features like twilio and firebase and nextAuth and clerk and hygraph ....  ",
       },
       {
-        title: "Web Developer - ABC Agency",
-        stage: "2010 - 2012",
+        title: "backend Developer - expressjs and knowlege nestjs",
+        stage: "",
       },
       {
-        title: "Intern - DEF Corporation",
-        stage: "2008 - 2010",
+        title: "Full Stack Developer - MERN Stack",
+        stage: "",
       },
     ],
   },
@@ -61,17 +53,14 @@ const aboutData = [
     title: "credentials",
     info: [
       {
-        title: "Web Development - ABC University, LA, CA",
-        stage: "2011",
+        title: "Web Development - self learning",
+      
       },
       {
-        title: "Computer Science Diploma - AV Technical Institute",
-        stage: "2009",
+        title: "Computer Science Diploma - benha university",
+        stage: "2025",
       },
-      {
-        title: "Certified Graphic Designer - ABC Institute, Los Angeles, CA",
-        stage: "2006",
-      },
+
     ],
   },
 ];
@@ -100,20 +89,20 @@ const About = () => {
         initial="hidden"
         animate="show"
         exit="hidden"
-        className=" hidden xl:flex absolute bottom-0 -left-[370px]"
+        className="  hidden xl:flex absolute bottom-0 -left-[370px]"
       >
         <Avatar />
       </motion.div>
 
-      <div className=" container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
+      <div className="  container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
         {/*  TEXT */}
-        <div className="flex-1 flex flex-col justify-center ">
+        <div className=" ml-10 flex-1 flex flex-col justify-center ">
           <motion.h2
             variants={fadeIn("right", 0.2)}
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="h2"
+            className="h2 z-50"
           >
             Captivating <span className="text-accent">stories</span> birth
             magnificent designs
@@ -123,9 +112,9 @@ const About = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
+            className="z-50 max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
           >
-            fucker 10 years ago, I began freelancing as a developer. Since then, I have
+           r 10 years ago, I began freelancing as a developer. Since then, I have
             done remte work for agencies, counsulted for startups, and
             collaboreted on digital products for business and consumer use
           </motion.p>
@@ -141,39 +130,23 @@ const About = () => {
               {/* experience */}
               <div className=" relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0 ">
                 <div className=" text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={10} duration={10} />
+                  <CountUp start={0} end={3} duration={10} />
                 </div>
                 <div className=" text-[1rem] font-semibold uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
                   Years of experience
                 </div>
               </div>
-              <div className=" relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0 ">
-                {/* clients */}
-                <div className=" text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={250} duration={10} />
-                </div>
-                <div className=" text-[1rem] font-semibold uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
-                  Satisfied clients
-                </div>
-              </div>
+
               <div className=" relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0 ">
                 {/* projects */}
                 <div className=" text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={650} duration={10} />
+                  <CountUp start={0} end={30} duration={10} />
                 </div>
                 <div className=" text-[1rem] font-semibold uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
                   Finsished project
                 </div>
               </div>
-              <div className=" relative  ">
-                {/* projects */}
-                <div className=" text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={8} duration={10} />
-                </div>
-                <div className=" text-[1rem] font-semibold uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
-                  winning awards
-                </div>
-              </div>
+
             </div>
           </motion.div>
         </div>
