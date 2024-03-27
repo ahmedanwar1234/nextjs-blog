@@ -13,7 +13,7 @@ const Home = () => {
   return <div className=" bg-primary/60 h-full">
     {/* {text} */}
 
-    <div className=" w-full h-full bg-gradient-to-r from-primary/10 via-black/30 to-black/10 "><div className="  text-center flex flex-col justify-center xl:pt-40 xl:text-left h-full container mx-auto">
+    <div className=" max-md:mt-20 w-full h-full bg-gradient-to-r from-primary/10 via-black/30 to-black/10 "><div className="  text-center flex flex-col justify-center xl:pt-40 xl:text-left h-full container mx-auto">
       
       <motion.h1  initial='hidden' animate='show' exit='hidden' variants={fadeIn('down',0.4)} className="h1">Full Stack Developer  <br/>  <span className=" text-accent">Mern Stack</span></motion.h1>
       <motion.p  initial='hidden' animate='show' exit='hidden' variants={fadeIn('down',0.4)} className=" max-w-sm  xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16">
